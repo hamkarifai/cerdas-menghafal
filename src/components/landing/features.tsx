@@ -38,8 +38,12 @@ export function Features() {
   return (
     <section id="fitur" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Abstract Floating Icons/Elements */}
-      <div className="absolute top-10 left-10 text-amber-500/10 text-9xl font-arabic pointer-events-none select-none -rotate-12">ا</div>
-      <div className="absolute bottom-20 right-10 text-primary/10 text-9xl font-arabic pointer-events-none select-none rotate-12">ب</div>
+      <div className="absolute top-10 left-10 text-amber-500/10 text-9xl font-arabic pointer-events-none select-none -rotate-12 animate-pulse duration-[3000ms]">ا</div>
+      <div className="absolute bottom-20 right-10 text-primary/10 text-9xl font-arabic pointer-events-none select-none rotate-12 animate-bounce duration-[5000ms]">ب</div>
+      <div className="absolute top-40 right-40 text-primary/5 text-8xl font-arabic pointer-events-none select-none rotate-45 hidden lg:block">ج</div>
+      
+      {/* Tech/Grid Pattern */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] pointer-events-none"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/40 rounded-full blur-3xl -z-10 pointer-events-none"></div>
 
       <div className="container mx-auto px-4 relative z-10">

@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/s
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
+    <nav className="sticky top-0 z-50 w-full bg-background/80 backdrop-blur-md border-b border-amber-400/20 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-bold text-xl text-amber-400">
           <BookOpen className="h-6 w-6" />
@@ -20,10 +20,10 @@ export function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-amber-400">
+          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-amber-400 transition-colors">
             Masuk
           </Link>
-          <Button className="bg-amber-400 hover:bg-amber-500" >Mulai Gratis</Button>
+          <Button className="bg-amber-400 hover:bg-amber-500 shadow-md shadow-amber-200 animate-shine" >Mulai Gratis</Button>
         </div>
 
         {/* Mobile Menu */}

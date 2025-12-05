@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, Download, BookOpen, Sparkles, Brain, Rocket } from "lucide-react";
+import { ArrowRight, BookOpen, Sparkles, Brain, Rocket } from "lucide-react";
 import Image from "next/image";
 import {
   Carousel,
@@ -69,7 +69,6 @@ export function Hero() {
         <div className="absolute bottom-1/3 right-20 w-24 h-24 bg-purple-400/30 rounded-full blur-xl animate-bounce duration-1000"></div>
 
         {/* Grid Pattern Overlay */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10 h-full">
@@ -169,7 +168,7 @@ export function Hero() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                       <Button
                         size="lg"
-                        className="gap-2 h-12 px-8 text-base bg-amber-400 hover:bg-amber-500 shadow-lg shadow-amber-400/20 font-bold"
+                        className="gap-2 h-12 px-8 text-base bg-amber-400 hover:bg-amber-500 shadow-lg shadow-amber-400/20 font-bold animate-shine"
                       >
                         <Rocket className="h-5 w-5" /> Mulai Belajar Sekarang
                       </Button>

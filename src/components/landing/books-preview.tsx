@@ -27,12 +27,24 @@ const books = [
 
 export function BooksPreview() {
   return (
-    <section className="py-24 bg-background relative overflow-hidden">
+    <section className="pt-32 pb-24 bg-background relative overflow-hidden">
+
        {/* Decorative Background Pattern (Islamic Geometric Abstract) */}
        <div className="absolute top-0 right-0 w-64 h-64 bg-amber-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/3"></div>
        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl opacity-50 translate-y-1/3 -translate-x-1/4"></div>
        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none"></div>
 
+       {/* Floating Animated Icons */}
+       <div className="absolute top-20 left-10 text-amber-200 animate-bounce duration-3000 hidden lg:block">
+          <Book className="w-12 h-12 opacity-50 rotate-12" />
+       </div>
+       <div className="absolute bottom-20 right-10 text-primary/20 animate-pulse duration-4000 hidden lg:block">
+          <GraduationCap className="w-16 h-16 -rotate-12" />
+       </div>
+       <div className="absolute top-1/2 right-20 text-amber-100 animate-spin duration-10000 hidden lg:block">
+          <Scroll className="w-10 h-10" />
+       </div>
+       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
